@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
+  "name": "Install serveterm",
   "id": "serveterm",
   "version": "0.1.0",
   "options": {
