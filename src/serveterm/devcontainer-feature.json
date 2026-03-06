@@ -25,6 +25,6 @@
     }
   },
   "postStartCommand": {
-    "server": "/usr/local/bin/serveterm-onstart"
+    "server": ["/usr/local/bin/serveterm-onstart"]
   }
 }

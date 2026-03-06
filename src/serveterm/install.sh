@@ -73,7 +73,7 @@ echo "Installed ${BINARY_NAME} to ${INSTALL_PATH}"
 
 cat << EOF > ${INSTALL_PATH}-onstart
 #!/bin/sh
-${INSTALL_PATH} --address ${PORT} --host ${HOST} --default-command ${DEFAULT_COMMAND}
+nohup sh -c "${INSTALL_PATH} --address ${PORT} --host ${HOST} --default-command ${DEFAULT_COMMAND} &"
 EOF
 
 chmod +x ${INSTALL_PATH}-onstart
