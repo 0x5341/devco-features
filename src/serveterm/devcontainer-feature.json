@@ -4,9 +4,27 @@
   "version": "0.1.0",
   "options": {
     "version": {
+      "description": "serveterm version (github release)",
       "type": "string",
       "default": "latest"
+    },
+    "port": {
+      "description": "serveterm port",
+      "type": "string",
+      "default": "4000"
+    },
+    "host": {
+      "description": "serveterm host",
+      "type": "string",
+      "default": "0.0.0.0"
+    },
+    "default_command": {
+      "description": "serveterm default command",
+      "type": "string",
+      "default": "bash"
     }
+  },
+  "postStartCommand": {
+    "server": "/usr/local/bin/serveterm-onstart"
   }
-
 }
