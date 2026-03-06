@@ -75,3 +75,5 @@ cat << EOF > ${INSTALL_PATH}-onstart
 #!/bin/sh
 ${INSTALL_PATH} --address ${PORT} --host ${HOST} --default-command ${DEFAULT_COMMAND}
 EOF
+
+chmod +x ${INSTALL_PATH}-onstart
